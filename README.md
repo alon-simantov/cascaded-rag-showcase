@@ -27,6 +27,8 @@ This project directly mirrors ServiceNow’s AI Platform patterns:
 - Average end-to-end latency: **<180 ms** per query on DGX Spark
 - Supports concurrent model loading with zero swap overhead
 
+**📊 Latest Benchmark Results**: [View full report → BENCHMARK_RESULTS.md](https://github.com/alon-simantov/cascaded-rag-showcase/blob/main/BENCHMARK_RESULTS.md)
+
 ### Full Implementation
 The complete codebase and detailed setup instructions are kept in a **private repository** to protect an ongoing customer POC.  
 
