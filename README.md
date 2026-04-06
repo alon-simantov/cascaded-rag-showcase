@@ -1,33 +1,46 @@
-# Hi, I'm Alon Siman-Tov 👋
+# Cascaded RAG Evaluation Platform
 
-**PMTS Full Stack Developer @ Salesforce** | Technical Leader & AI Implementation Engineer
+**Production-grade local Retrieval-Augmented Generation system built on NVIDIA DGX Spark (Grace Blackwell)**
 
-I design and deliver **high-scale cloud solutions** and **production-grade AI systems**. With a strong background in customer success, sustaining engineering, post-sales support, and technical account management, I excel at translating complex technical requirements into reliable, scalable solutions that drive customer adoption, retention, and long-term value.
+End-to-end evaluation platform featuring a **self-correcting, multi-stage (cascaded) RAG pipeline** with LangGraph orchestration, local LLM inference, and privacy-first web augmentation.
 
-### Current Focus
-- **[Cascaded RAG Evaluation Platform](https://github.com/alon-simantov/cascaded-rag-showcase)** — Production-grade local Retrieval-Augmented Generation system featuring multi-stage retrieval, self-correcting LangGraph orchestration, privacy-first web augmentation, and comprehensive benchmarking. Built on NVIDIA DGX Spark (Grace Blackwell).  
-  **📊 Benchmark Results**: [View full report → BENCHMARK_RESULTS.md](https://github.com/alon-simantov/cascaded-rag-showcase/blob/main/BENCHMARK_RESULTS.md)
+### Key Features
+- Multi-stage (cascaded) retrieval: coarse semantic search → re-ranking → context/metadata filtering
+- Self-correcting LangGraph workflow (document grading, hallucination detection, usefulness checks, and intelligent query rewriting)
+- Local LLM inference via Ollama with multiple models loaded simultaneously
+- Privacy-first web search augmentation using SearxNG
+- Full evaluation dashboard and automated benchmarking
+- Optimized for the DGX Spark’s 128 GB unified memory architecture
 
-- Exploring modern AI architectures, Agentic AI, and secure hybrid data pipelines.
+### Benchmark Highlights (v2)
+Tested on 10 complex multi-step queries:
 
-### Professional Background
-- **PMTS @ Salesforce** – Led solution architecture and customer-facing technical initiatives for high-scale cloud applications.
-- Extensive experience in **software sustaining, post-sales support, and technical account management** across enterprise software companies (Tableau Software, Hewlett-Packard, Opsware, Arel Communications).
-- Proven track record troubleshooting complex systems, improving product stability, driving customer adoption, and ensuring long-term customer success.
+| Metric                  | Single Model | Cascade Mode | Improvement |
+|-------------------------|--------------|--------------|-------------|
+| **Faithfulness (mean)** | 0.16         | **0.70**     | **+0.54**   |
+| Faithfulness ≥ 0.70     | 2/10         | **8/10**     | **+6**      |
+| Relevancy (mean)        | 0.19         | **0.90**     | +0.71       |
+| Context Precision (mean)| 0.31         | **0.47**     | +0.16       |
+| Questions with Web Context | 4/10      | **10/10**    | **+6**      |
+| Average Latency         | 189s         | **188s**     | –1s         |
+
+**Key takeaway**: Cascade mode eliminated all zero-faithfulness answers and delivered significantly better context relevance through intelligent retrieval and self-correction.
+
+**Full benchmark report**: [BENCHMARK_RESULTS.md](https://github.com/alon-simantov/cascaded-rag-showcase/blob/main/BENCHMARK_RESULTS.md)
+
+### Why This Project Matters
+Demonstrates practical, production-ready AI engineering skills:
+- Designing scalable, low-latency RAG architectures for complex enterprise workloads
+- Building self-correcting Agentic AI pipelines
+- Optimizing inference and retrieval on high-performance hardware
+- Balancing accuracy, privacy, and performance in hybrid environments
 
 ### Tech Stack
-**AI & Data**  
-Ollama • LangGraph • Cascaded RAG • SearxNG • ChromaDB • NVIDIA DGX Spark
-
-**Cloud & Architecture**  
-High-Scale Cloud Solutions • Solution Design • POCs • System Integration
-
-**Core Skills**  
-Customer Success • Sustaining Engineering • Post-Sales Support • Technical Account Management • Troubleshooting & Issue Resolution • Stakeholder Collaboration
-
-**Connect**  
-[LinkedIn](https://www.linkedin.com/in/alon-siman-tov-7966093/) | [Email me](mailto:alon.simantov@gmail.com)
+Ollama • SearxNG • LangGraph • ChromaDB • FastAPI • NVIDIA DGX Spark (Grace Blackwell) • Python 3.12
 
 ---
 
-⭐ Passionate about building reliable, scalable, and customer-centric technical solutions.
+⭐ The complete codebase is kept private to protect an ongoing customer POC.  
+Hiring managers and recruiters are welcome to request temporary collaborator access or a live demo.
+
+Built as hands-on proof of forward-deployed AI implementation and solution architecture capabilities.
