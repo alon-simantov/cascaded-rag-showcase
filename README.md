@@ -1,46 +1,33 @@
-# Cascaded RAG Evaluation Platform – ServiceNow Moveworks & Now Assist Aligned
+# Hi, I'm Alon Siman-Tov 👋
 
-**Production-grade local RAG evaluation platform built on NVIDIA DGX Spark (GB10)**
+**PMTS Full Stack Developer @ Salesforce** | Technical Leader & AI Implementation Engineer
 
-End-to-end testing of Retrieval-Augmented Generation with **self-correcting LangGraph pipelines**, multi-stage (cascaded) retrieval, and LLM-as-judge scoring — fully offline and privacy-first.
+I design and deliver **high-scale cloud solutions** and **production-grade AI systems**. With a strong background in customer success, sustaining engineering, post-sales support, and technical account management, I excel at translating complex technical requirements into reliable, scalable solutions that drive customer adoption, retention, and long-term value.
 
-### Key Features
-- **Cascaded Retrieval**: coarse semantic search → re-ranking → context/metadata filtering
-- Self-correcting LangGraph workflow (grades documents, detects hallucinations, checks usefulness, rewrites queries when needed)
-- Local LLM inference via **Ollama** (multiple models resident simultaneously)
-- Privacy-first web augmentation with **SearxNG**
-- ChromaDB vector store + full evaluation dashboard
-- Optimized specifically for the DGX Spark’s 128 GB unified memory
+### Current Focus
+- **[Cascaded RAG Evaluation Platform](https://github.com/alon-simantov/cascaded-rag-showcase)** — Production-grade local Retrieval-Augmented Generation system featuring multi-stage retrieval, self-correcting LangGraph orchestration, privacy-first web augmentation, and comprehensive benchmarking. Built on NVIDIA DGX Spark (Grace Blackwell).  
+  **📊 Benchmark Results**: [View full report → BENCHMARK_RESULTS.md](https://github.com/alon-simantov/cascaded-rag-showcase/blob/main/BENCHMARK_RESULTS.md)
 
-### ServiceNow Moveworks / Now Assist Alignment
-This project directly mirrors ServiceNow’s AI Platform patterns:
-- Multi-stage RAG retrieval used in **Now Assist AI Search** and **AI Agent Studio**
-- Agentic self-correction and reasoning loops (Moveworks Enterprise Search style)
-- Hallucination reduction + grounded generation
-- Hybrid/local inference best practices for enterprise deployments
+- Exploring modern AI architectures, Agentic AI, and secure hybrid data pipelines.
 
-### Demo & Results
-[→ Add your 30–60 second Loom video or GIF here (anonymized)]
-
-**Sample Metrics** (replace with your real numbers):
-- Answer relevance improvement: **+42%** vs single-stage RAG
-- Average end-to-end latency: **<180 ms** per query on DGX Spark
-- Supports concurrent model loading with zero swap overhead
-
-**📊 Latest Benchmark Results**: [View full report → BENCHMARK_RESULTS.md](https://github.com/alon-simantov/cascaded-rag-showcase/blob/main/BENCHMARK_RESULTS.md)
-
-### Full Implementation
-The complete codebase and detailed setup instructions are kept in a **private repository** to protect an ongoing customer POC.  
-
-If you are a ServiceNow recruiter or hiring manager, I’m happy to:
-- Invite you as a temporary collaborator, or
-- Share a read-only link / live demo under NDA
-
-Just reach out via LinkedIn.
+### Professional Background
+- **PMTS @ Salesforce** – Led solution architecture and customer-facing technical initiatives for high-scale cloud applications.
+- Extensive experience in **software sustaining, post-sales support, and technical account management** across enterprise software companies (Tableau Software, Hewlett-Packard, Opsware, Arel Communications).
+- Proven track record troubleshooting complex systems, improving product stability, driving customer adoption, and ensuring long-term customer success.
 
 ### Tech Stack
-Ollama • SearxNG • LangGraph • ChromaDB • NVIDIA DGX Spark (Grace Blackwell) • FastAPI Dashboard • Python 3.12
+**AI & Data**  
+Ollama • LangGraph • Cascaded RAG • SearxNG • ChromaDB • NVIDIA DGX Spark
 
-**Built as hands-on proof of forward-deployed AI Implementation skills.**
+**Cloud & Architecture**  
+High-Scale Cloud Solutions • Solution Design • POCs • System Integration
 
-⭐ Star this repo if you’re exploring Agentic RAG or ServiceNow AI patterns!
+**Core Skills**  
+Customer Success • Sustaining Engineering • Post-Sales Support • Technical Account Management • Troubleshooting & Issue Resolution • Stakeholder Collaboration
+
+**Connect**  
+[LinkedIn](https://www.linkedin.com/in/alon-siman-tov-7966093/) | [Email me](mailto:alon.simantov@gmail.com)
+
+---
+
+⭐ Passionate about building reliable, scalable, and customer-centric technical solutions.
